@@ -1,34 +1,38 @@
-//inicio programa
-const min = 1;
-const max = 10;
+//juego adivina el num de la primer entrega
 
-//array con las variables posibles
-const numeros = [];
-for (let i = min; i <= max; i++) {
-    numeros.push(i);
-}
+// //inicio programa
+// const min = 1;
+// const max = 10;
 
-//eleccion de num aleatorio del array
-const randomIndex = Math.floor(Math.random() * numeros.length);
-const numeroRandom = numeros[randomIndex];
+// //array con las variables posibles
+// const numeros = [];
+// for (let i = min; i <= max; i++) {
+//     numeros.push(i);
+// }
 
-//pido al usuario que eliga el num
-let userGuess = parseInt(prompt(`Adivina el número entre ${min} y ${max}:`));
+// //eleccion de num aleatorio del array
+// const randomIndex = Math.floor(Math.random() * numeros.length);
+// const numeroRandom = numeros[randomIndex];
 
-//vemos si el num ingresado es correcto
-if (userGuess === numeroRandom) {
-    alert('¡Felicidades! Adivinaste el número.');
-} else {
-    alert(`Lo siento, el número correcto era ${numeroRandom}.`);
-}
+// //pido al usuario que eliga el num
+// let userGuess = parseInt(prompt(`Adivina el número entre ${min} y ${max}:`));
 
-//preguntamos si quiere jugar de nuevo
-const jugarOtravez = confirm('¿Quieres jugar de nuevo?');
+// //vemos si el num ingresado es correcto
+// if (userGuess === numeroRandom) {
+//     alert('¡Felicidades! Adivinaste el número.');
+// } else {
+//     alert(`Lo siento, el número correcto era ${numeroRandom}.`);
+// }
 
-if (jugarOtravez) {
-    //si quiere jugar denuevo refrescamos la pagina
-    location.reload();
-} else {
-    //sino quiere jugar de nuevo lo despedimos
-    alert('Gracias por jugar. ¡Hasta luego!');
-}
+// //preguntamos si quiere jugar de nuevo
+// const jugarOtravez = confirm('¿Quieres jugar de nuevo?');
+
+// if (jugarOtravez) {
+//     //si quiere jugar denuevo refrescamos la pagina
+//     location.reload();
+// } else {
+//     //sino quiere jugar de nuevo lo despedimos
+//     alert('Gracias por jugar. ¡Hasta luego!');
+// }
+
+// segunda entrega (login para pagina web)
