@@ -35,4 +35,10 @@
 //     alert('Gracias por jugar. ¡Hasta luego!');
 // }
 
-// segunda entrega (login para pagina web)
+
+
+const logout = document.querySelector("#logout");
+logout.addEventListener("click", () => {
+    alert("Hasta luego!");
+    window.location.href = 'login.html';
+});
