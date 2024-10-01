@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <div class="formulario">
-        <h1>Inicio de sesion</h1>
-        <form id="loginForm">
+        <h1>Registro</h1>
+        <form id="signupForm">
             <div class="username">
-                <input type="text" required id="usuario" autofocus>
+                <input type="text" required id="usuario">
                 <label>Nombre de Usuario</label>
             </div>
             <div class="contraseña">
                 <input type="password" required id="clave">
                 <label>Contraseña</label>
             </div>
-            <div class="recordar">¿Olvido su contraseña?</div>
-            <input type="submit" value="Iniciar">
-            <div class="registrarse">
-                Quiero<a href="signup.html"> registrarme</a>
-            </div>
+            <input type="submit" value="Registro">
+            <p>Si ya tienes una cuenta <a href="login.html">Login</a></p>
         </form>
     </div>
 
-    <script src="./js/login.js"></script>
+    <script src="../js/signup.js"></script>
 </body>
 </html>

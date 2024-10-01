@@ -4,13 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-   <section>
-    <h1>Home</h1>
-    <button id="logout">Logout</button>
-   </section>
+
+    <header>
+         <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i>Ver Carrito(<span id="cart-count">0</span>)</a>
+    </header>
+    
+    <section class="products container">
+        <div class="card-product">
+            <img src="./assets/amd_ryzen_7.png" alt="ryzen7">
+            <div class="product-title">
+                <h3>Ryzen 7</h3>
+                <p class="price">$200000</p>
+            </div>
+
+            <p>Procesador de alto rendimiento</p>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+
+        </div>
+        <div class="card-product"></div>
+            <img src="./assets/rtx3090.png" alt="rtx3090">
+            <div class="product-title">
+                <h3>Rtx 3090</h3>
+                <p class="price">$500000</p>
+            </div>
+
+            <p>Gpu de Alto rendimiento</p>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+
+        </div>
+        <div class="card-product"></div>
+            <img src="./assets/ram.png" alt="ram">
+            <div class="product-title">
+                <h3>8gb Ram ddr4 3200mhz</h3>
+                <p class="price">$25000</p>
+            </div>
+
+            <p>Memoria Ram ddr4</p>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="cart-modal" class="card-modal">
+        <div class="cart-content">
+            <span class="close-cart"> &times; </span>
+            <h2>carrito de compras</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">total: $0</p>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div id="purchase-modal" class="purchase-modal">
+        <div class="purchase-content">
+            <h2>¡Compra Finalizada!</h2>
+            <p>Gracias por tu compra</p>
+            <button id="close-purchase">Cerrar</button>
+        </div>
+    </div>
 
    <script src="./js/script.js"></script>
 </body>
