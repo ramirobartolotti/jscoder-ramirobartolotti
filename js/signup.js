@@ -8,12 +8,12 @@ signupForm.addEventListener("submit", (e) => {
     const isUserRegistered = Users.find(u => u.usuario === usuario)
     
     if (isUserRegistered) {
-        return alert("El usuario ya está registrado")
+        return swal("El usuario ya está registrado")
     }
     
     Users.push({ usuario: usuario, clave: pass })
     localStorage.setItem("users", JSON.stringify(Users))
-    alert("Registro Exitoso")
+    swal("Registro Exitoso")
 
     window.location.href = 'login.html';
 })

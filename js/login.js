@@ -10,9 +10,9 @@ loginForm.addEventListener("submit", (e) => {
     const validUser = Users.find(user => user.usuario === usuario && user.clave === pass);
     
     if (!validUser) {
-        return alert("¡Usuario o contraseña incorrectos!");
+        return swal("¡Usuario o contraseña incorrectos!");
     }
-    alert(`¡Bienvenido ${validUser.usuario}!`);
+    swal(`¡Bienvenido ${validUser.usuario}!`);
     
-    window.location.href = './index.html';
+    window.location.href = '/index.html';
 })
